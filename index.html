@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Situs web resmi pariwisata Indonesia. Temukan informasi tentang kebudayaan, tempat wisata terbaik, hotel favorit, dan cara bertransaksi dengan mudah.">
+        <meta name="keywords" content="pariwisata, Indonesia, kebudayaan, tempat wisata, hotel, transaksi">
+        <meta name="author" content="Nama Anda">
+        <title>Indonesian Tourism</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+<body>    
+    <header>
+        <div class="container">
+            <h1>Indonesian Tourism</h1>
+            <nav>
+                <ul>
+                    <li><a href="#kebudayaan">Kebudayaan Indonesia</a></li>
+                    <li><a href="#tempat-wisata">Tempat Wisata Terbaik</a></li>
+                    <li><a href="#daftar-hotel">Daftar Hotel Favorit</a></li>
+                    <li><a href="#transaksi">Transaksi</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="kebudayaan">
+        <div class="container">
+            <h2>Kebudayaan Indonesia</h2>
+            <p>Indonesia, negara kepulauan terbesar di dunia, memiliki kekayaan budaya yang sangat beragam. Setiap daerah di Indonesia memiliki tradisi, tarian, musik, pakaian adat, dan upacara adat yang unik dan khas. Berikut adalah beberapa aspek kebudayaan Indonesia yang menarik:</p>
+            <ul>
+                <li><strong>Tarian Tradisional:</strong> Setiap daerah di Indonesia memiliki tarian tradisional yang unik. Misalnya, Tari Kecak dari Bali yang menampilkan tarian kelompok dengan cerita epik Ramayana, dan Tari Saman dari Aceh yang dikenal sebagai "tarian seribu tangan".</li>
+                <li><strong>Musik Tradisional:</strong> Musik tradisional Indonesia juga sangat bervariasi, dengan alat musik khas seperti gamelan dari Jawa dan Bali, angklung dari Sunda, dan sasando dari Nusa Tenggara Timur.</li>
+                <li><strong>Pakaian Adat:</strong> Pakaian adat Indonesia mencerminkan identitas budaya setiap daerah. Kebaya dan batik adalah contoh pakaian adat yang sering digunakan dalam upacara resmi dan pernikahan.</li>
+                <li><strong>Upacara Adat:</strong> Setiap daerah memiliki upacara adat yang unik, seperti Ngaben (upacara kremasi) di Bali, Sekaten di Yogyakarta, dan Tabuik di Sumatera Barat.</li>
+            </ul>
+            <img src="gambar1.jpg" alt="Kebudayaan Indonesia">
+        </div>
+    </section>
+    
+
+    <section id="tempat-wisata">
+        <div class="container">
+            <h2>Tempat Wisata Terbaik di Indonesia</h2>
+            <p>Indonesia adalah surga bagi para wisatawan dengan keindahan alam yang menakjubkan dan budaya yang kaya. Berikut adalah beberapa destinasi wisata terbaik yang wajib dikunjungi di Indonesia:</p>
+            <ul>
+                <li><strong>Bali:</strong> Dikenal sebagai Pulau Dewata, Bali menawarkan pantai-pantai eksotis, pemandangan sawah terasering, serta budaya dan seni yang memukau. Tempat-tempat seperti Uluwatu, Ubud, dan Tanah Lot adalah beberapa destinasi favorit di Bali.</li>
+                <li><strong>Raja Ampat:</strong> Terletak di Papua Barat, Raja Ampat adalah surga bagi para penyelam dengan keindahan bawah laut yang luar biasa. Kepulauan ini dikenal dengan keanekaragaman hayati laut yang sangat tinggi dan pemandangan alam yang spektakuler.</li>
+                <li><strong>Yogyakarta:</strong> Sebagai pusat budaya Jawa, Yogyakarta menawarkan banyak situs bersejarah dan budaya, seperti Candi Borobudur, Candi Prambanan, dan Keraton Yogyakarta. Selain itu, Malioboro adalah tempat yang sempurna untuk berbelanja oleh-oleh khas.</li>
+                <li><strong>Komodo:</strong> Pulau Komodo terkenal dengan hewan purba yang langka, Komodo. Selain itu, pulau ini juga menawarkan pemandangan alam yang menakjubkan dan pantai-pantai yang indah, seperti Pink Beach.</li>
+            </ul>
+            <img src="gambar2.jpg" alt="Tempat Wisata Indonesia">
+        </div>
+    </section>
+    
+
+ <section id="daftar-hotel">
+    <div class="container">
+        <h2>Daftar Hotel Favorit</h2>
+        <p>Berikut adalah beberapa hotel favorit di Indonesia yang terkenal dengan pelayanan dan fasilitasnya yang memuaskan:</p>
+        <ul>
+            <li>Hotel Mulia, Jakarta</li>
+            <li>Ritz-Carlton, Bali</li>
+            <li>Hyatt Regency, Yogyakarta</li>
+            <li>Padma Resort, Bandung</li>
+        </ul>
+        <img src="img.png" alt="Hotel Favorit di Indonesia">
+    </div>
+</section>
+
+
+<section id="transaksi">
+    <div class="container">
+        <h2>Transaksi</h2>
+        <form id="transaksiForm">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="tanggal">Tanggal Transaksi:</label>
+            <input type="date" id="tanggal" name="tanggal" required>
+            
+            <label for="jumlah">Jumlah:</label>
+            <input type="number" id="jumlah" name="jumlah" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+    <script>
+        document.getElementById('transaksiForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const nama = document.getElementById('nama').value;
+            const email = document.getElementById('email').value;
+            const tanggal = document.getElementById('tanggal').value;
+            const jumlah = document.getElementById('jumlah').value;
+            
+            alert(`Transaksi Berhasil!\nNama: ${nama}\nEmail: ${email}\nTanggal: ${tanggal}\nJumlah: ${jumlah}`);
+        });
+    </script>
+        
+
+    <footer>
+        <div class="container">
+            <p>&copy; Created By Muhammad Hasbi Noor</p>
+        </div>
+    </footer>
+</body>
+</html>

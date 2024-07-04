@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed; /* Ganti dengan path gambar latar belakang kamu */
+    background-size: cover;
+    color: #fff; /* Menjaga teks tetap putih untuk kontras dengan latar belakang */
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Overlay warna hitam dengan transparansi */
+    z-index: -1;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.8); /* Transparansi untuk membuat teks lebih terlihat */
+    color: #333;
+    padding: 20px 0;
+    border-bottom: #77a4a7 3px solid;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Transparansi untuk membuat konten lebih terlihat */
+    color: #333;
+    margin: 20px 0;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2em;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background: #77a4a7;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+form button:hover {
+    background: #669494;
+}
